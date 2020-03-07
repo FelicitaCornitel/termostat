@@ -1,0 +1,23 @@
+In programul meu am implementat 4 clase, una dintre care este main(apelul
+metodelor).
+
+	Clasa Room contine datele despre fiecare camera: numele, numele 
+device-ului, suprafata si poz_max reprezinte ultima ora la care a fost adaugata temperatura.
+Ea contine si un vector de intervale(intervale de ore intr-o zi, care
+ la randul lui e format  din vector de temperaturi.
+ 
+ 	Clasa Temperatura contine un vector de temperaturi.
+ 	
+ 	In clasa House implementez metodele Observe, Trigger heat, Temperature
+ si list.Metoda observe calculeaza de la inceput pozitia unde trebuie inserata temperatura, 
+ in functie de timestamp, dupa verific daca a mai fost adaugata aceeasi
+ temperatura. Dupa ce am adaugat temperaturile, sortez vectorul.
+ Metoda trigger verifica daca centrala termica trebuie pornita sau nu.
+ Metoda list afiseaza valorile temperaturilor intre cele doua intervale.
+ 
+ 	In  main am citit datele din fisier si in functie de ele, am apelat metodele folosite 
+ in clasa House. Am verificat daca fisierul exista, dupa am citit datele din fisier
+ si pentru fiecare camera am adaugat, numele ei, numele device-ului si suprafata camerei.
+Intr un while apelez metodele. Citind fiecare comanda din fisier ii atribui metoda respectiva lui.
+La sfarsit inchid fisierele.
+ 
